@@ -173,18 +173,20 @@ button:hover {
 
 .menu_footer_phone {
     text-decoration: none  ;
-
+    margin-top:0.4em;
     color:#1B1C21;
     font-size: 24px;
     line-height: 32px;
     letter-spacing: -0.6px;
     margin-left: 0.95em;
+    margin-bottom:40px;
 
 }
 
 /*FOOTER-LANGUAGE*/
 .menu_footer_language-button_wrapper {
     display:flex;
+    margin-bottom: 32px;
 }
 
 .menu_footer_language-ru {
