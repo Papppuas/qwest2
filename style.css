@@ -58,8 +58,8 @@ button:hover {
     display:flex;
     flex-direction: column;
     background-color: #FFFFFF;
-    box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02),
-    16px 0px 52px rgba(14, 24, 80, 0.2);
+    box-shadow: -2px 0 4px rgba(69, 79, 126, 0.02),
+    16px 0 52px rgba(14, 24, 80, 0.2);
 }
 .header {
     width:320px;
@@ -104,9 +104,8 @@ button:hover {
     display:flex;
     flex-direction: column;
     padding:0;
-    margin:50px 0 0 0;
+    margin:50px 0 1em 0;
     list-style:none;
-    margin-bottom: 1em;
 }
 
 
@@ -123,16 +122,17 @@ button:hover {
 /*HIGHLITES MENU-ITEMS */
 .menu .menu_items:before {
     content: "";
-    width:2px;
+    width:1px;
     height:31px;
     background-color:#41F6D7;
     position: absolute;
     left: -1.5em;
-    border: solid 0.5px #41F6D7;
-    border-top-right-radius: 7px;
-    border-bottom-right-radius: 7px;
+    border: solid 1px #41F6D7;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
     opacity:1;
     visibility: hidden;
+    top:-4px;
 }
 .menu .menu_items:hover:before {
     visibility: visible;
