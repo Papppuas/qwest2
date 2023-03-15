@@ -58,6 +58,8 @@ button:hover {
     display:flex;
     flex-direction: column;
     background-color: #FFFFFF;
+    box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02),
+    16px 0px 52px rgba(14, 24, 80, 0.2);
 }
 .header {
     width:320px;
@@ -107,10 +109,36 @@ button:hover {
     margin-bottom: 1em;
 }
 
+
 .menu_items {
     margin-bottom:2em;
     margin-left:1.5em;
+    position: relative;
 }
+
+.menu_items-link:hover,
+.menu_items-link:focus {
+    color: #7E7E82;
+}
+/*HIGHLITES MENU-ITEMS */
+.menu .menu_items:before {
+    content: "";
+    width:2px;
+    height:31px;
+    background-color:#41F6D7;
+    position: absolute;
+    left: -1.5em;
+    border: solid 0.5px #41F6D7;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    opacity:1;
+    visibility: hidden;
+}
+.menu .menu_items:hover:before {
+    visibility: visible;
+    opacity: 1;
+}
+/**/
 .menu_items:last-child {
     margin-bottom:0;
 }
@@ -198,4 +226,9 @@ button:hover {
 }
 .menu_footer_language-ch {
     margin-left:0.438em;
+}
+.menu_footer_language-ru:hover,
+.menu_footer_language-en:hover,
+.menu_footer_language-ch:hover {
+    border: none;
 }
